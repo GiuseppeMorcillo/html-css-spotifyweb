@@ -103,6 +103,9 @@ hr {
     padding: 20px;
     background-color: #858585;
 }
+.mid-left ul {
+    margin-bottom: 200px;
+}
 .mid-left ul li{
     padding-bottom: 15px;
 }
