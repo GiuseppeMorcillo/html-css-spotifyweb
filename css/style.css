@@ -84,6 +84,12 @@ hr {
 .menu ul li {
     padding-bottom: 15px;
 }
+.menu ul a{
+    display: flex;
+}
+.menu ul a:hover{
+    border-left:3px solid green;
+}   
 /**LEFT-SIDE MID**/
 
 .mid-left{
@@ -140,8 +146,9 @@ hr {
     }
 
     .logo .logo-big {
-        width: 15vw;
+        width: 300px;
         display: block;
+        margin: 0 auto;
     }
 
     .logo-small {
@@ -152,12 +159,14 @@ hr {
         display: flex;
         align-items: center;
         gap: 10px;
+        font-size: 1.5rem;
 
     }
     .bottom-left-side a {
         display: flex;
         align-items: center;
         gap: 10px;
+        font-size: 1.5rem;
     }
 
     hr {
@@ -172,6 +181,8 @@ hr {
     }
     .mid-left{
         display: block;
+        font-size: 1.5rem;
     }
+
 
 }
