@@ -33,6 +33,7 @@ hr {
 /**Main Container**/
 .container {
     display: flex;
+    height: 85vh;
 }
 
 .left-side {
@@ -40,34 +41,41 @@ hr {
     width: 20vw;
 }
 
+.right-side {
+    height: 100vh;
+}
+
 .player {
     height: 15vh;
     background-color: #282828;
+
 
 }
 
 .title {
     background-color: #10131a;
-    height: 10%;
+    height: 10vh;
     width: 80vw;
 }
 
 .playlist {
     background-color: #151922;
-    height: 1000px;
+    height: 90vh;
+
 }
+
 /**Left-Side TOP**/
 .left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .left-side img {
     width: 45px;
 }
+
 
 .logo img {
     padding: 10px 0px 30px 0px;
@@ -78,43 +86,59 @@ hr {
 }
 
 .menu img {
-    width: 45px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .menu ul li {
     padding-bottom: 15px;
 }
-.menu ul a{
+
+.menu ul a {
     display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-left: -60px;
+    padding-left: 60px;
 }
-.menu ul a:hover{
-    border-left:3px solid green;
-}   
+
+.menu ul a:hover {
+    box-shadow: inset 4px 0 0 green;
+}
+
 /**LEFT-SIDE MID**/
 
-.mid-left{
+.mid-left {
     color: #999999;
     margin-top: 90px;
     display: none;
 }
-.mid-left i{
+
+.mid-left i {
     color: black;
 }
-.mid-left h3{
+
+.mid-left h3 {
     color: #ffffff;
     text-transform: uppercase;
 }
-.mid-left p i{
+
+.mid-left p i {
     margin: 15px 15px 60px 0px;
     padding: 20px;
     background-color: #858585;
 }
+
 .mid-left ul {
     margin-bottom: 200px;
 }
-.mid-left ul li{
+
+.mid-left ul li {
     padding-bottom: 15px;
 }
+
 /**LEFT-SIDE BOTTOM**/
 .bottom-left-side {
     padding-bottom: 20px;
@@ -122,7 +146,7 @@ hr {
 
 .bottom-left-side ul li {
     padding-bottom: 15px;
-    
+
 }
 
 .profilo img {
@@ -133,12 +157,15 @@ hr {
     overflow: hidden;
     color: #ffffff;
 }
-.downloadapp{
+
+.downloadapp {
     color: #5e5e5e;
 }
-.bottom-left-side ul .download{
+
+.bottom-left-side ul .download {
     opacity: 0.3;
 }
+
 /******RESPONSIVE CODE ********/
 @media screen and (min-width: 992px) {
     span {
@@ -160,8 +187,15 @@ hr {
         align-items: center;
         gap: 10px;
         font-size: 1.5rem;
-
     }
+
+    .menu ul a {
+
+        transition: box-shadow 0.3s ease-in-out;
+        margin-left: -30px;
+        padding-left: 30px;
+    }
+
     .bottom-left-side a {
         display: flex;
         align-items: center;
@@ -179,7 +213,8 @@ hr {
         align-items: normal;
         padding: 0px 30px;
     }
-    .mid-left{
+
+    .mid-left {
         display: block;
         font-size: 1.5rem;
     }
