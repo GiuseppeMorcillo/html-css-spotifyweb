@@ -16,16 +16,20 @@ body {
 ul {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-span{
+
+span {
     display: none;
 }
-hr{
+
+hr {
     display: none;
 }
+
 /**Main Container**/
 .container {
     display: flex;
@@ -44,23 +48,21 @@ hr{
 
 .title {
     background-color: #10131a;
-    height: 10vh;
+    height: 15%;
     width: 80vw;
 }
 
 .playlist {
-    display: flex;
     background-color: #151922;
-    height: 80vh;
+    height: 800px;
 }
-
 /**Left-Side TOP**/
 .left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .left-side img {
@@ -78,17 +80,41 @@ hr{
 .menu img {
     width: 45px;
 }
+
 .menu ul li {
     padding-bottom: 15px;
 }
+/**LEFT-SIDE MID**/
 
+.mid-left{
+    color: #999999;
+    margin-top: 90px;
+    display: none;
+}
+.mid-left i{
+    color: black;
+}
+.mid-left h3{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.mid-left p i{
+    margin: 15px 15px 60px 0px;
+    padding: 20px;
+    background-color: #858585;
+}
+.mid-left ul li{
+    padding-bottom: 15px;
+}
 /**LEFT-SIDE BOTTOM**/
 .bottom-left-side {
     padding-bottom: 20px;
 }
-.bottom-left-side ul li{
+
+.bottom-left-side ul li {
     padding-bottom: 15px;
 }
+
 .profilo img {
     width: 45px;
     height: 45px;
@@ -98,12 +124,12 @@ hr{
     color: #ffffff;
 }
 
-
 /******RESPONSIVE CODE ********/
 @media screen and (min-width: 992px) {
-    span{
+    span {
         display: block;
     }
+
     .logo .logo-big {
         width: 15vw;
         display: block;
@@ -112,9 +138,10 @@ hr{
     .logo-small {
         display: none;
     }
-    .menu a{
+
+    .menu a {
         display: flex;
-        align-items: center;  
+        align-items: center;
         gap: 10px;
 
     }
@@ -123,13 +150,19 @@ hr{
         align-items: center;
         gap: 10px;
     }
-    hr{
+
+    hr {
         border: 1px solid #ffffff;
-        margin: 10px 0px;
+        margin: 5px 0 30px;
+        display: block;
     }
-    .left-side{
+
+    .left-side {
         align-items: normal;
         padding: 0px 30px;
     }
-    
+    .mid-left{
+        display: block;
+    }
+
 }
