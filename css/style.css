@@ -48,13 +48,13 @@ hr {
 
 .title {
     background-color: #10131a;
-    height: 15%;
+    height: 10%;
     width: 80vw;
 }
 
 .playlist {
     background-color: #151922;
-    height: 800px;
+    height: 1000px;
 }
 /**Left-Side TOP**/
 .left-side {
@@ -116,6 +116,7 @@ hr {
 
 .bottom-left-side ul li {
     padding-bottom: 15px;
+    
 }
 
 .profilo img {
@@ -126,7 +127,12 @@ hr {
     overflow: hidden;
     color: #ffffff;
 }
-
+.downloadapp{
+    color: #5e5e5e;
+}
+.bottom-left-side ul .download{
+    opacity: 0.3;
+}
 /******RESPONSIVE CODE ********/
 @media screen and (min-width: 992px) {
     span {
