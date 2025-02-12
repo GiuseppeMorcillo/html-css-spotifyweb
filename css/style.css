@@ -33,50 +33,46 @@ hr {
 /**Main Container**/
 .container {
     display: flex;
-    height: 85vh;
+    height: calc(100% - 90px);
+    background-color: #151922;
+    flex-grow: 1;
 }
 
 .left-side {
     background-color: #000000;
-    width: 20vw;
-}
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 .right-side {
-    height: 100vh;
+    flex-grow: 1;
 }
 
-.player {
-    height: 15vh;
+.footer-player {
+    height: 90px;
     background-color: #282828;
-
-
 }
 
 .title {
     background-color: #10131a;
-    height: 10vh;
-    width: 80vw;
+    height: 90px;
 }
 
 .playlist {
     background-color: #151922;
-    height: 90vh;
-
 }
 
 /**Left-Side TOP**/
-.left-side {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .left-side img {
     width: 45px;
 }
 
-
+.logo{
+    text-align: center;
+}
 .logo img {
     padding: 10px 0px 30px 0px;
 }
@@ -100,8 +96,7 @@ hr {
     align-items: center;
     padding: 10px 15px;
     transition: box-shadow 0.3s ease-in-out;
-    margin-left: -60px;
-    padding-left: 60px;
+
 }
 
 .menu ul a:hover {
@@ -141,6 +136,7 @@ hr {
 
 /**LEFT-SIDE BOTTOM**/
 .bottom-left-side {
+    margin-top: auto;
     padding-bottom: 20px;
 }
 
@@ -169,13 +165,18 @@ hr {
 /******RESPONSIVE CODE ********/
 @media screen and (min-width: 992px) {
     span {
-        display: block;
+        display: inline;
     }
-
-    .logo .logo-big {
+    .left-side{
         width: 300px;
-        display: block;
-        margin: 0 auto;
+    }
+    .logo{
+        text-align: left;
+    }
+    .logo .logo-big {
+        width: 180px;
+        display: inline;
+        
     }
 
     .logo-small {
@@ -186,11 +187,9 @@ hr {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 1.5rem;
     }
 
     .menu ul a {
-
         transition: box-shadow 0.3s ease-in-out;
         margin-left: -30px;
         padding-left: 30px;
@@ -200,7 +199,6 @@ hr {
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 1.5rem;
     }
 
     hr {
@@ -215,8 +213,8 @@ hr {
     }
 
     .mid-left {
-        display: block;
-        font-size: 1.5rem;
+      
+
     }
 
 
