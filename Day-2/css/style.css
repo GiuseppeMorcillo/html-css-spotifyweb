@@ -192,7 +192,9 @@ hr {
 }
 
 /** RIGHT SIDE PLAYLIST**/
-
+.right-side{
+    overflow: scroll;
+}
 .right-side .playlist ul {
     display: flex;
     justify-content: center;
@@ -206,7 +208,25 @@ hr {
     font-size: 0.8rem;
     text-transform: uppercase;
 }
+.container-recent-played{
+    padding: 50px 20px 0px 20px;
+}
+.container-recent-played .row{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.container-reent-played .col{
+    width: calc(100% / 2);
+    flex-shrink: 0;
 
+}
+.top-card img{
+    width: 150px
+}
 /******RESPONSIVE CODE ********/
 @media screen and (min-width: 992px) {
     span {
