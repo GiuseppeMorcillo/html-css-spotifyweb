@@ -106,7 +106,7 @@ hr {
 }
 
 .menu ul a:hover {
-    box-shadow: inset 4px 0 0 green;
+    box-shadow: inset 3px 0 0 #adff2f;
 }
 
 /**LEFT-SIDE MID**/
@@ -196,7 +196,7 @@ hr {
     overflow: scroll;
 }
 
-.right-side .playlist ul {
+.playlist ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -209,9 +209,11 @@ hr {
     font-size: 0.8rem;
     text-transform: uppercase;
 }
-.titoli-played{
-    padding:50px 0px;
+
+.titoli-played {
+    padding: 50px 0px;
 }
+
 .container-recent-played {
     padding: 50px 20px 0px 20px;
 }
@@ -222,6 +224,7 @@ hr {
     row-gap: 10px;
     column-gap: 30px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .container-reent-played .col {
@@ -229,8 +232,29 @@ hr {
     flex-shrink: 0;
 }
 
+.bottom-card .subtitle {
+    font-size: 0.6rem;
+    color: #7c7e83;
+}
+
 .top-card img {
     width: 130px
+}
+
+.titoli-played p {
+    font-size: 0.6rem;
+    color: #7c7e83;
+}
+
+.artisti-popolari .top-card img {
+    border-radius: 50%;
+}
+.hover-menu-playlist {
+ font-size: 0.8rem;
+}
+.hover-menu-playlist:hover {
+    display: inline-flex;
+    border-bottom: 3px solid #adff2f;
 }
 
 /******RESPONSIVE CODE ********/
@@ -295,6 +319,7 @@ hr {
     .mid-left {
         display: block;
     }
+
     .right-side .playlist ul li {
         width: calc(100%/3);
     }
@@ -304,11 +329,29 @@ hr {
     .right-side .playlist ul li {
         width: calc(100%/5);
     }
+
     .container-reent-played .col {
         width: calc(100% / 5);
         flex-shrink: 0;
     }
+
     .container-recent-played .row {
         column-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .right-side .playlist ul li {
+        width: calc(100%/6);
+    }
+
+    .container-reent-played .col {
+        width: calc(100% / 6);
+        flex-shrink: 0;
+    }
+
+    .right-side .playlist ul {
+
+        flex-wrap: unset;
     }
 }
