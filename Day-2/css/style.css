@@ -47,7 +47,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 1;
+    width: 50px;
 }
 
 .right-side {
@@ -192,26 +192,29 @@ hr {
 }
 
 /** RIGHT SIDE PLAYLIST**/
-.right-side{
+.right-side {
     overflow: scroll;
 }
+
 .right-side .playlist ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.right-side .playlist ul li{
+.right-side .playlist ul li {
     text-align: center;
     width: calc(100%/4);
     padding-top: 10px;
     font-size: 0.8rem;
     text-transform: uppercase;
 }
-.container-recent-played{
+
+.container-recent-played {
     padding: 50px 20px 0px 20px;
 }
-.container-recent-played .row{
+
+.container-recent-played .row {
     display: flex;
     flex-wrap: wrap;
     row-gap: 10px;
@@ -219,22 +222,25 @@ hr {
     text-align: center;
     justify-content: center;
 }
-.container-reent-played .col{
+
+.container-reent-played .col {
     width: calc(100% / 2);
     flex-shrink: 0;
 
 }
-.top-card img{
+
+.top-card img {
     width: 150px
 }
+
 /******RESPONSIVE CODE ********/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     span {
         display: inline;
     }
 
     .left-side {
-        width: 300px;
+        width: 230px;
     }
 
     .logo {
@@ -246,6 +252,12 @@ hr {
         display: inline;
         padding-bottom: 10px;
 
+    }
+
+    .logo .logo-big {
+        width: 150px;
+        display: inline;
+        padding-bottom: 10px;
     }
 
     .logo-small {
@@ -286,3 +298,5 @@ hr {
 
 
 }
+
+@media screen and (min-width: 992px) {}
