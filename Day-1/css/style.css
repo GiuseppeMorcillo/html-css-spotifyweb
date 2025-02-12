@@ -9,8 +9,11 @@ body {
     font-family: "Montserrat", serif;
     color: white;
     height: 100vh;
+    overflow: hidden;
 }
-
+span{
+    font-size: 16px;
+}
 main {
     height: calc(100% - 90px);
     display: flex;
@@ -67,7 +70,7 @@ hr {
 /**Left-Side TOP**/
 
 .left-side img {
-    width: 45px;
+    width: 30px;
 }
 
 .logo {
@@ -89,7 +92,7 @@ hr {
 }
 
 .menu ul li {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .menu ul a {
@@ -108,7 +111,7 @@ hr {
 
 .mid-left {
     color: #999999;
-    margin-top: 90px;
+    padding-top: 20px;
     display: none;
 }
 
@@ -119,36 +122,41 @@ hr {
 .mid-left h3 {
     color: #ffffff;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 .mid-left p i {
-    margin: 15px 15px 60px 0px;
-    padding: 20px;
+    padding: 10px;
     background-color: #858585;
 }
 
 .mid-left ul {
-    margin-bottom: 200px;
+   padding:10px 0px;
 }
 
 .mid-left ul li {
     padding-bottom: 15px;
 }
-
+.mid-left p span{
+    padding-left: 5px;
+}
 /**LEFT-SIDE BOTTOM**/
 .bottom-left-side {
     margin-top: auto;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .bottom-left-side ul li {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
+}
+.profilo  {
+    padding-top: 10px ;
 }
 
 .profilo img {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #646464;
     overflow: hidden;
@@ -178,8 +186,9 @@ hr {
     }
 
     .logo .logo-big {
-        width: 180px;
+        width: 150px;
         display: inline;
+        padding-bottom: 10px;
 
     }
 
@@ -207,7 +216,6 @@ hr {
 
     hr {
         border: 1px solid #ffffff;
-        margin: 5px 0 30px;
         display: block;
     }
 
