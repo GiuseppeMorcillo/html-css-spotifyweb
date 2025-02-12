@@ -209,7 +209,9 @@ hr {
     font-size: 0.8rem;
     text-transform: uppercase;
 }
-
+.titoli-played{
+    padding:50px 0px;
+}
 .container-recent-played {
     padding: 50px 20px 0px 20px;
 }
@@ -220,17 +222,15 @@ hr {
     row-gap: 10px;
     column-gap: 30px;
     text-align: center;
-    justify-content: center;
 }
 
 .container-reent-played .col {
     width: calc(100% / 2);
     flex-shrink: 0;
-
 }
 
 .top-card img {
-    width: 150px
+    width: 130px
 }
 
 /******RESPONSIVE CODE ********/
@@ -295,8 +295,20 @@ hr {
     .mid-left {
         display: block;
     }
-
-
+    .right-side .playlist ul li {
+        width: calc(100%/3);
+    }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 768px) {
+    .right-side .playlist ul li {
+        width: calc(100%/5);
+    }
+    .container-reent-played .col {
+        width: calc(100% / 5);
+        flex-shrink: 0;
+    }
+    .container-recent-played .row {
+        column-gap: 10px;
+    }
+}
