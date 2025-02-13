@@ -91,6 +91,7 @@ hr {
     max-width: 100%;
     height: auto;
     display: block;
+    opacity: 0.5;
 }
 
 .menu ul li {
@@ -102,11 +103,15 @@ hr {
     align-items: center;
     padding: 10px 15px;
     transition: box-shadow 0.3s ease-in-out;
+    color:#999999;
 
 }
 
 .menu ul a:hover {
     box-shadow: inset 3px 0 0 #adff2f;
+}
+.menu ul li:hover span{
+    color: #ffffff;
 }
 
 /**LEFT-SIDE MID**/
@@ -181,6 +186,12 @@ hr {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    margin-right: 15px;
+    top: 0;
+    right: 0;
+    width: calc(100% - 50px);
+    z-index: 99;
 }
 
 .right-side .title h2 {
@@ -196,6 +207,10 @@ hr {
     overflow: scroll;
 }
 
+.playlist {
+    padding-top: 100px;
+}
+
 .playlist ul {
     display: flex;
     justify-content: center;
@@ -208,6 +223,7 @@ hr {
     padding-top: 10px;
     font-size: 0.8rem;
     text-transform: uppercase;
+    opacity: 0.5;
 }
 
 .titoli-played {
@@ -232,13 +248,45 @@ hr {
     flex-shrink: 0;
 }
 
+.col {
+    width: 130px;
+}
+
+.bottom-card .title-bottom {
+    font-size: 0.8rem;
+}
+
 .bottom-card .subtitle {
     font-size: 0.6rem;
     color: #7c7e83;
 }
-
+.top-card{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.overlay i{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 3px solid #ffffff;
+    padding: 5px;
+}
+.top-card:hover .overlay{
+    display: flex;
+}
 .top-card img {
-    width: 130px
+    width: 100%;
 }
 
 .titoli-played p {
@@ -249,12 +297,18 @@ hr {
 .artisti-popolari .top-card img {
     border-radius: 50%;
 }
+
 .hover-menu-playlist {
- font-size: 0.8rem;
+    font-size: 0.8rem;
 }
+
 .hover-menu-playlist:hover {
     display: inline-flex;
-    border-bottom: 3px solid #adff2f;
+    border-bottom: 3px inset #adff2f;
+}
+
+.menu-playlist a span {
+    display: inline;
 }
 
 /******RESPONSIVE CODE ********/
@@ -318,6 +372,12 @@ hr {
 
     .mid-left {
         display: block;
+        overflow-y: scroll;
+    }
+
+    .right-side .title {
+
+        width: calc(100% - 245px);
     }
 
     .right-side .playlist ul li {
